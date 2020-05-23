@@ -5,7 +5,7 @@ use std::io;
 use std::str::Chars;
 
 /*
- -1: 初期値
+ 1000000: 初期値
  -100: 障害物
 */
 fn main() {
@@ -13,48 +13,64 @@ fn main() {
     let n = input[0];
     let x = input[1];
     let y = input[2];
-    let mut cost_map: Vec<Vec<i64>> = vec![vec![-1; 500]; 500];
+    let mut cost_map: Vec<Vec<i64>> = vec![vec![1000000; 1000]; 1000];
     for _ in 0..n {
         let input = input_number();
         let obstacle_x = input[0];
         let obstacle_y = input[1];
-        cost_map[(obstacle_x + 200) as usize][(obstacle_y + 200) as usize] = -100;
+        cost_map[(obstacle_x + 500) as usize][(obstacle_y + 500) as usize] = -100;
     }
-    cost_map[200][200] = 0;
+    cost_map[500][500] = 0;
     let mut checker: Vec<(usize, usize)> = Vec::new();
-    checker.push((200, 200));
+    checker.push((500, 500));
 
     loop {
-        if cost_map[(x + 200) as usize][(y + 200) as usize] != -1 {
-            println!("{}", cost_map[(x + 200) as usize][(y + 200) as usize]);
+        if cost_map[(x + 500) as usize][(y + 500) as usize] != 1000000 {
+            println!("{}", cost_map[(x + 500) as usize][(y + 500) as usize]);
             break;
         }
         let mut new_checker: Vec<(usize, usize)> = Vec::new();
         for (i, j) in &checker {
-            if i + 1 <= 400 && j + 1 <= 400 && cost_map[i + 1][j + 1] == -1 {
-                cost_map[i + 1][j + 1] = cost_map[*i][*j] + 1;
-                new_checker.push((i + 1, j + 1));
+            if i + 1 < 1000 && j + 1 < 1000 && cost_map[i + 1][j + 1] != -100 {
+                if cost_map[i + 1][j + 1] > cost_map[*i][*j] + 1 {
+                    cost_map[i + 1][j + 1] = cost_map[*i][*j] + 1;
+                    new_checker.push((i + 1, j + 1));
+                }
             }
-            if j + 1 <= 400 && cost_map[*i][j + 1] == -1 {
-                cost_map[*i][j + 1] = cost_map[*i][*j] + 1;
-                new_checker.push((*i, j + 1));
+            if j + 1 < 1000 && cost_map[*i][j + 1] != -100 {
+                if cost_map[*i][j + 1] > cost_map[*i][*j] + 1 {
+                    cost_map[*i][j + 1] = cost_map[*i][*j] + 1;
+                    new_checker.push((*i, j + 1));
+                }
             }
-            if *i as i64 - 1 >= 0 && j + 1 <= 400 && cost_map[i - 1][j + 1] == -1 {
-                cost_map[i - 1][j + 1] = cost_map[*i][*j] + 1;
-                new_checker.push((i - 1, j + 1));
+            if *i as i64 - 1 >= 0 && j + 1 < 1000 && cost_map[i - 1][j + 1] != -100 {
+                if cost_map[i - 1][j + 1] > cost_map[*i][*j] + 1 {
+                    cost_map[i - 1][j + 1] = cost_map[*i][*j] + 1;
+                    new_checker.push((i - 1, j + 1));
+                }
             }
-            if i + 1 <= 400 && cost_map[i + 1][*j] == -1 {
-                cost_map[i + 1][*j] = cost_map[*i][*j] + 1;
-                new_checker.push((i + 1, *j));
+            if i + 1 < 1000 && cost_map[i + 1][*j] != -100 {
+                if cost_map[i + 1][*j] > cost_map[*i][*j] + 1 {
+                    cost_map[i + 1][*j] = cost_map[*i][*j] + 1;
+                    new_checker.push((i + 1, *j));
+                }
             }
-            if *i as i64 - 1 >= 0 && cost_map[i - 1][*j] == -1 {
-                cost_map[i - 1][*j] = cost_map[*i][*j] + 1;
-                new_checker.push((i - 1, *j));
+            if *i as i64 - 1 >= 0 && cost_map[i - 1][*j] != -100 {
+                if cost_map[i - 1][*j] > cost_map[*i][*j] + 1 {
+                    cost_map[i - 1][*j] = cost_map[*i][*j] + 1;
+                    new_checker.push((i - 1, *j));
+                }
             }
-            if *j as i64 - 1 >= 0 && cost_map[*i][j - 1] == -1 {
-                cost_map[*i][j - 1] = cost_map[*i][*j] + 1;
-                new_checker.push((*i, j - 1));
+            if *j as i64 - 1 >= 0 && cost_map[*i][j - 1] != -100 {
+                if cost_map[*i][j - 1] > cost_map[*i][*j] + 1 {
+                    cost_map[*i][j - 1] = cost_map[*i][*j] + 1;
+                    new_checker.push((*i, j - 1));
+                }
             }
+        }
+        if cost_map[(x + 500) as usize][(y + 500) as usize] != 1000000 {
+            println!("{}", cost_map[(x + 500) as usize][(y + 500) as usize]);
+            break;
         }
         if new_checker.len() == 0 {
             println!("-1");
