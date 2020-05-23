@@ -15,6 +15,7 @@ fn main() {
         println!("case-insensitive");
         return;
     }
+
     println!("different");
 }
 
