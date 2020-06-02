@@ -1,17 +1,53 @@
 #[allow(unused_imports)]
 use std::cmp::max;
+#[allow(unused_imports)]
+use std::collections::{HashMap, HashSet};
+#[allow(unused_imports)]
 use std::io;
+
+// fn main() {
+//     let input = input_number();
+//     let n = input[0] as usize;
+//     let mut current_n = n;
+//     let mut hash_set: HashSet<usize> = HashSet::new();
+//
+//     for i in 2..(n as f64).sqrt() as usize + 2 {
+//         if current_n % i == 0 {
+//             current_n /= i;
+//             hash_set.insert(i);
+//         }
+//     }
+//     if n > 1 && hash_set.len() == 0 {
+//         hash_set.insert(n);
+//     }
+//     println!("{}", hash_set.len());
+// }
 
 fn main() {
     let input = input_number();
     let n = input[0] as usize;
     let mut current_n = n;
-    let mut counter = 0;
-    for i in 2..n {
+    let mut counter = 0usize;
+
+    for i in 2..(n as f64).sqrt() as usize + 2 {
         if current_n % i == 0 {
             current_n /= i;
             counter += 1;
+
+            let mut j = 2;
+            while current_n % i.pow(j) == 0 {
+                current_n /= i.pow(j);
+                counter += 1;
+                j += 1;
+            }
+
+            while current_n % i == 0 {
+                current_n /= i;
+            }
         }
+    }
+    if current_n > 1 {
+        counter += 1;
     }
     println!("{}", counter);
 }

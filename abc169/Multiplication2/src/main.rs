@@ -7,8 +7,7 @@ fn main() {
     let _n = input[0] as usize;
     let ai = input_number();
 
-    let check = ai.iter().find(|x| **x == 0);
-    if let Some(_) = check {
+    if let Some(_) = ai.iter().find(|x| **x == 0) {
         println!("0");
         return;
     }
@@ -16,15 +15,12 @@ fn main() {
     let mut result = 1u64;
     let checker = 1000000000000000000u64;
     for value in ai {
-        if result > checker {
+        if value <= checker / result {
+            result = result * value;
+        } else {
             println!("-1");
             return;
         }
-        if checker / result < value {
-            println!("-1");
-            return;
-        }
-        result = result * value;
     }
     println!("{}", result);
 }

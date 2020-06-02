@@ -1,0 +1,1 @@
+/Users/ucucmacmini/Workspace/code/contest/atcoder/abc169/Knapsack_for_All_Subsets/target/debug/Knapsack_for_All_Subsets: /Users/ucucmacmini/Workspace/code/contest/atcoder/abc169/Knapsack_for_All_Subsets/src/main.rs

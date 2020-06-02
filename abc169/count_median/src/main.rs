@@ -11,20 +11,40 @@ use std::io;
 10 20
 8 100
 */
+/*
+5
+3 10
+2 6
+1 3
+10 20
+8 100
+*/
 
 fn main() {
     let input = input_number();
     let n = input[0] as usize;
     let mut input = (0..n).map(|_| input_number()).collect::<Vec<Vec<i64>>>();
-    input.sort_by(|a, b| a[1].cmp(&b[1]));
-    input.sort_by(|a, b| a[0].cmp(&b[0]));
 
-    for i in 0..n {
-        for j in 0..1000000000 {}
+    let median_a: i64;
+    input.sort_by(|a, b| a[0].cmp(&b[0]));
+    if n % 2 == 0 {
+        median_a = input[n / 2][0] + input[n / 2 - 1][0];
+    } else {
+        median_a = input[n / 2][0];
     }
 
-    for i in 0..n {
-        println!("{}, {}", input[i][0], input[i][1]);
+    let median_b: i64;
+    input.sort_by(|a, b| a[1].cmp(&b[1]));
+    if n % 2 == 0 {
+        median_b = input[n / 2][1] + input[n / 2 - 1][1];
+    } else {
+        median_b = input[n / 2][1];
+    }
+
+    if n % 2 == 0 {
+        println!("{}", median_b - median_a + 1);
+    } else {
+        println!("{}", median_b - median_a + 1);
     }
 }
 
