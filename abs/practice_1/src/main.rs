@@ -3,10 +3,22 @@ use std::cmp::max;
 #[allow(unused_imports)]
 use std::fmt;
 #[allow(unused_imports)]
+use std::fmt::Debug;
+#[allow(unused_imports)]
 use std::io;
+#[allow(unused_imports)]
+use std::str::FromStr;
 
 fn main() {
-    println!("aaaaaa");
+    let input = get_vec_input();
+    let a: i64 = input[0];
+    let input = get_vec_input();
+    let b: i64 = input[0];
+    let c: i64 = input[1];
+    let input: Vec<String> = get_vec_input();
+    let s: &str = &input[0];
+
+    println!("{} {}", a + b + c, s);
 }
 
 #[allow(dead_code)]
@@ -42,20 +54,24 @@ where
 }
 
 #[allow(dead_code)]
-fn input_number() -> Vec<i64> {
+fn get_vec_input<T>() -> Vec<T>
+where
+    T: FromStr,
+    T::Err: Debug,
+{
     let mut input = String::new();
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
-    let vec: Vec<i64> = input
+    let vec: Vec<T> = input
         .split_whitespace()
-        .map(|x| x.parse().unwrap_or(0))
+        .map(|x| x.parse().unwrap())
         .collect();
     vec
 }
 
 #[allow(dead_code)]
-fn input() -> (u64, f32) {
+fn get_tuple_input() -> (u64, f32) {
     let mut s = String::new();
     io::stdin().read_line(&mut s).expect("");
     let mut iter = s.trim().split_whitespace();
@@ -63,4 +79,3 @@ fn input() -> (u64, f32) {
     let n: f32 = iter.next().unwrap().parse().unwrap();
     (c, n)
 }
-
