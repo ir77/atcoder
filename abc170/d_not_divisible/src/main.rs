@@ -13,30 +13,39 @@ use std::str::FromStr;
 
 fn main() {
     let n: i64 = get_vec_input()[0];
-
     let mut a: Vec<i64> = get_vec_input();
     a.sort();
-    let mut result: i64 = 0;
-    for i in 0..n as usize {
-        for j in 0..n as usize {
-            if i == j {
-                if j == n as usize - 1 {
-                    result += 1;
+    let a_max = a[n as usize - 1];
+    let mut dp: Vec<bool> = vec![true; (a_max + 1) as usize];
+    let mut count_dp: Vec<i64> = vec![0; (a_max + 1) as usize];
+
+    for &x in a.iter() {
+        count_dp[x as usize] += 1;
+        for i in 2..=a_max {
+            if x * i <= a_max {
+                if dp[(x * i) as usize] == false {
+                    continue;
                 }
-                continue;
-            }
-            if i < j && a[i] != a[j] {
-                result += 1;
+                dp[(x * i) as usize] = false;
+            } else {
                 break;
-            }
-            if a[i] % a[j] == 0 {
-                break;
-            }
-            if j == n as usize - 1 {
-                result += 1;
             }
         }
     }
+
+    if a.len() == 1 {
+        println!("1");
+        return;
+    }
+
+    let result = a
+        .iter()
+        .map(|&x| x as usize)
+        .filter(|&x| count_dp[x] <= 1)
+        .filter(|&x| dp[x] == true)
+        .collect::<Vec<_>>()
+        .len();
+
     println!("{}", result);
 }
 
