@@ -10,7 +10,24 @@ use std::io;
 use std::str::FromStr;
 
 fn main() {
-    let n: i64 = get_vec_input()[0];
+    let n: usize = get_vec_input()[0];
+    let mut answer = get_digit(n as i64);
+
+    for a in 2..((n as f64).sqrt() as usize) + 1 {
+        if n % a != 0 {
+            continue;
+        }
+        let b = n / a;
+        let current: i64;
+        if a >= b {
+            current = get_digit(a as i64);
+        } else {
+            current = get_digit(b as i64);
+        }
+        update_min(&mut answer, current);
+    }
+
+    println!("{}", answer);
 }
 
 #[allow(dead_code)]
@@ -90,4 +107,3 @@ fn get_string_input() -> String {
     io::stdin().read_line(&mut s).expect("");
     s.trim().to_string()
 }
-
