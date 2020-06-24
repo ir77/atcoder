@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1980012a-4b68-423d-8003-347b1fbd5815" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abc168_d/.idea/abc168_d.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abc168_d/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abc168_d/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abc168_d/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abc168_d/src/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/abc168_d" beforeDir="false" afterPath="$PROJECT_DIR$/../abc168_d/target/debug/abc168_d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/deps/abc168_d-e91ecf87cb49a72e" beforeDir="false" afterPath="$PROJECT_DIR$/../abc168_d/target/debug/deps/abc168_d-e91ecf87cb49a72e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/15pxp073p4f8dgpl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/164609vmflm1myvp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/182kki2k1mkcpnwx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/19az70yq4ft73qfg.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1emibcxa167079qx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1fbsqtd02mc1onrr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1k25ziv7soneqw4x.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1kat7c0zjo7r5y65.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1kug5mzf9zjbau8a.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1mh7ush2teptwyrt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1mkk6ujahpyfjtjj.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1p92drha14bp09ns.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/1u8tuecaenlmghh.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/20f90ynv58w27elu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/21c1l7p1qbd4alef.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/221wxy5ch3csxrm2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/2a54s09hhggkttim.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/2d4qxx9mrnhoic5w.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/2kmxb9hmd80k7c4x.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/2sai02xs4et7txlo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/2xwqu1p7ccarkm8n.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/30c5fuaq3l3q254o.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/30v94hq1pbfgrceh.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/32tmm7ossy6fyrsr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/36n61xzbv4t4tt0q.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3975ua5wa9v7wwu9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3dkeez19lryhevaj.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3ker3r82n3t06i17.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3l4g0vnvnhzmv9t.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3vevgg6vytqrdojr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3vkuvn8ylv4eyjf2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3wn5kl9prue1uxe2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/3xpsf192ea3vj53p.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/436a3lwrc2549w44.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/46rf2mlr3qtalwt9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4dt5s6gs9kjrlg8c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4fpyc5bets2me18i.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4kjh25qh58aym8cz.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4ozph6f3un18779h.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4piovdltkoro7dlt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4wpazp5iuowfx2ea.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4xwjbilpuaukalom.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4ykdli6u2jue6x83.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/4z2dpq30fzkj429x.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/513u7cim71oiqwl9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/51tha6iw7j8s3a5w.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/564u393u2fcan6aq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/5682mql9w7vxabz.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/5czgsvz051w1e6g3.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/5eet6e4pioe96u5l.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/o6lgkg6xnrfjexi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/q3o5b05e0f0o3ri.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/taupdt4cj6f2kjp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/tjkipgohz8wc8mt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1-52agsgm43o8g/xtndxply6ave5tu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/debug/incremental/abc168_d-vaj3woaeh44m/s-fom386rxtn-14oooj1.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1gd2cdqoon9r/s-fom386mu7n-xwzjqj-1txk7vceo0jnj/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1gd2cdqoon9r/s-fom386mu7n-xwzjqj-1txk7vceo0jnj/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1gd2cdqoon9r/s-fom386mu7n-xwzjqj-1txk7vceo0jnj/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1gd2cdqoon9r/s-fom386mu7n-xwzjqj.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1qwnbtwncxli/s-fom386otwr-120xuat-10tlpq0qu4sb1/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1qwnbtwncxli/s-fom386otwr-120xuat-10tlpq0qu4sb1/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1qwnbtwncxli/s-fom386otwr-120xuat-10tlpq0qu4sb1/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc168_d/target/rls/debug/incremental/abc168_d-1qwnbtwncxli/s-fom386otwr-120xuat.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KonanWorkspace">
+    <executables />
+  </component>
+  <component name="ProjectId" id="1dlbeGTD0uH6i3FsiMowWiokIBJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Shell Script" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1980012a-4b68-423d-8003-347b1fbd5815" name="Default Changelist" comment="" />
+      <created>1593002720104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593002720104</updated>
+      <workItem from="1593002721506" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>
