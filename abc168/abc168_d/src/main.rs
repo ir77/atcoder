@@ -19,52 +19,49 @@ fn main() {
     let input = get_vec_input();
     let n = input[0];
     let m = input[1];
-    let roads = (0..m).map(|_| get_vec_input()).collect::<Vec<Vec<usize>>>();
+    let mut roads = (0..m).map(|_| get_vec_input()).collect::<Vec<Vec<usize>>>();
 
     // 幅優先探索
-    let mut answer: Vec<usize> = Vec::new();
-    'out: for target in 2..=n {
-        let mut roads = roads.clone();
-        let mut queue: Vec<usize> = vec![1; 1];
+    let mut answer: HashMap<usize, usize> = HashMap::new();
+    let mut queue: Vec<usize> = vec![1; 1];
+    'out: loop {
+        let mut next_queue: Vec<usize> = Vec::new();
+        let mut remove_index: Vec<usize> = Vec::new();
 
-        'ok: loop {
-            // println!("target => {}, {:?}, {:?}", target, queue, roads);
-            let mut next_queue: Vec<usize> = Vec::new();
-            let mut remove_index: Vec<usize> = Vec::new();
-
-            for (i, road) in roads.iter().enumerate() {
-                if queue.contains(&road[0]) {
-                    if road[1] == target {
-                        answer.push(road[0]);
-                        // println!("1: {}, {}, {}, {}", i, road[0], road[1], target);
-                        break 'ok;
-                    }
-                    next_queue.push(road[1]);
-                    remove_index.push(i);
-                } else if queue.contains(&road[1]) {
-                    if road[0] == target {
-                        answer.push(road[1]);
-                        // println!("2: {}, {}, {}, {}", i, road[0], road[1], target);
-                        break 'ok;
-                    }
-                    next_queue.push(road[0]);
-                    remove_index.push(i);
-                }
+        for (i, road) in roads.iter().enumerate() {
+            if queue.contains(&road[0]) {
+                let key = road[1];
+                let target = road[0];
+                answer.insert(key, target);
+                next_queue.push(key);
+                remove_index.push(i);
+            } else if queue.contains(&road[1]) {
+                let key = road[0];
+                let target = road[1];
+                answer.insert(key, target);
+                next_queue.push(key);
+                remove_index.push(i);
             }
-            if remove_index.len() == 0 {
+            if answer.len() == n - 1 {
                 break 'out;
             }
-            for i in remove_index.iter().rev() {
-                roads.remove(*i);
-            }
-            queue = next_queue;
         }
+        if remove_index.len() == 0 {
+            break;
+        }
+        for i in remove_index.iter().rev() {
+            roads.remove(*i);
+        }
+        queue = next_queue;
     }
+
     if answer.len() != n - 1 {
         println!("No");
     } else {
         println!("Yes");
-        answer.iter().for_each(|x| println!("{}", x));
+        let mut answer = answer.iter().collect::<Vec<_>>();
+        answer.sort_by(|&x, &y| x.0.cmp(y.0));
+        answer.iter().for_each(|(_, value)| println!("{}", value));
     }
 }
 
