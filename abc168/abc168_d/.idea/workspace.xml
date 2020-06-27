@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a278f17-fb0f-4654-ac1f-924ba424b9e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/abc168_d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/abc168_d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e.dSYM/Contents/Resources/DWARF/abc168_d-e91ecf87cb49a72e" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e.dSYM/Contents/Resources/DWARF/abc168_d-e91ecf87cb49a72e" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KonanWorkspace">
+    <executables />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="xs107998" />
+  </component>
+  <component name="ProjectId" id="1dlXeAHoFMo0WvPZHCYMYgAxVmA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="language.rust.cargo" />
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="runRustfmtOnSave" value="true" />
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a278f17-fb0f-4654-ac1f-924ba424b9e6" name="Default Changelist" comment="" />
+      <created>1593000745914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593000745914</updated>
+      <workItem from="1593002468010" duration="38000" />
+      <workItem from="1593002651892" duration="33000" />
+      <workItem from="1593002696237" duration="15877000" />
+    </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1593007291172</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593007291172</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2008" y="397" key="#Intentions" timestamp="1593096961159">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="2008" y="397" key="#Intentions/0.23.3440.1417@0.23.3440.1417" timestamp="1593096961159" />
+    <state x="2471" y="601" key="#Notifications" timestamp="1593000777691">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="2471" y="601" key="#Notifications/0.23.3440.1417@0.23.3440.1417" timestamp="1593000777691" />
+    <state x="1092" y="322" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593000859901">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="1092" y="322" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3440.1417@0.23.3440.1417" timestamp="1593000859901" />
+    <state x="2020" y="545" key="#xdebugger.evaluate" timestamp="1593006206978">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="2020" y="545" key="#xdebugger.evaluate/0.23.3440.1417@0.23.3440.1417" timestamp="1593006206978" />
+    <state x="1720" y="23" width="1720" height="1417" key="CommitChangelistDialog2" timestamp="1593007290864">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="1720" y="23" width="1720" height="1417" key="CommitChangelistDialog2/0.23.3440.1417@0.23.3440.1417" timestamp="1593007290864" />
+    <state width="1256" height="502" key="GridCell.Tab.-1.bottom" timestamp="1593005717694">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.-1.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1593005717694" />
+    <state width="1256" height="502" key="GridCell.Tab.-1.center" timestamp="1593005717694">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.-1.center/0.23.3440.1417@0.23.3440.1417" timestamp="1593005717694" />
+    <state width="1256" height="502" key="GridCell.Tab.-1.left" timestamp="1593005717694">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.-1.left/0.23.3440.1417@0.23.3440.1417" timestamp="1593005717694" />
+    <state width="1256" height="502" key="GridCell.Tab.-1.right" timestamp="1593005717694">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.-1.right/0.23.3440.1417@0.23.3440.1417" timestamp="1593005717694" />
+    <state width="2366" height="533" key="GridCell.Tab.0.bottom" timestamp="1593234749069">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="2366" height="533" key="GridCell.Tab.0.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749069" />
+    <state width="2366" height="533" key="GridCell.Tab.0.center" timestamp="1593234749068">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="2366" height="533" key="GridCell.Tab.0.center/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749068" />
+    <state width="2366" height="533" key="GridCell.Tab.0.left" timestamp="1593234749067">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="2366" height="533" key="GridCell.Tab.0.left/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749067" />
+    <state width="2366" height="533" key="GridCell.Tab.0.right" timestamp="1593234749069">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="2366" height="533" key="GridCell.Tab.0.right/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749069" />
+    <state width="1256" height="502" key="GridCell.Tab.1.bottom" timestamp="1593005707052">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.1.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1593005707052" />
+    <state width="1256" height="502" key="GridCell.Tab.1.center" timestamp="1593005707051">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.1.center/0.23.3440.1417@0.23.3440.1417" timestamp="1593005707051" />
+    <state width="1256" height="502" key="GridCell.Tab.1.left" timestamp="1593005707051">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.1.left/0.23.3440.1417@0.23.3440.1417" timestamp="1593005707051" />
+    <state width="1256" height="502" key="GridCell.Tab.1.right" timestamp="1593005707051">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1256" height="502" key="GridCell.Tab.1.right/0.23.3440.1417@0.23.3440.1417" timestamp="1593005707051" />
+    <state x="732" y="442" key="SettingsEditor" timestamp="1593003586491">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="732" y="442" key="SettingsEditor/0.23.3440.1417@0.23.3440.1417" timestamp="1593003586491" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1593095519567">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.3440.1417@0.23.3440.1417" timestamp="1593095519567" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1593095808349">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1593095808349" />
+    <state x="2073" y="346" key="run.anything.popup" timestamp="1593102030229">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="2073" y="346" key="run.anything.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1593102030229" />
+    <state x="2073" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1593132770312">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="2073" y="348" width="670" height="676" key="search.everywhere.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1593132770312" />
+  </component>
+</project>

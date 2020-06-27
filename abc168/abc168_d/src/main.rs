@@ -16,41 +16,32 @@ use std::io;
 use std::str::FromStr;
 
 fn main() {
+    // 前処理
     let input = get_vec_input();
     let n = input[0];
     let m = input[1];
-    let mut roads = (0..m).map(|_| get_vec_input()).collect::<Vec<Vec<usize>>>();
+    let inputs = (0..m).map(|_| get_vec_input()).collect::<Vec<Vec<usize>>>();
+    let mut roads: Vec<Vec<usize>> = vec![Vec::new(); n];
+    for input in inputs {
+        roads[input[0] - 1].push(input[1] - 1);
+        roads[input[1] - 1].push(input[0] - 1);
+    }
 
     // 幅優先探索
     let mut answer: HashMap<usize, usize> = HashMap::new();
-    let mut queue: Vec<usize> = vec![1; 1];
-    'out: loop {
+    let mut queue: Vec<usize> = vec![0; 1];
+    'out: while queue.len() != 0 {
         let mut next_queue: Vec<usize> = Vec::new();
-        let mut remove_index: Vec<usize> = Vec::new();
-
-        for (i, road) in roads.iter().enumerate() {
-            if queue.contains(&road[0]) {
-                let key = road[1];
-                let target = road[0];
-                answer.insert(key, target);
-                next_queue.push(key);
-                remove_index.push(i);
-            } else if queue.contains(&road[1]) {
-                let key = road[0];
-                let target = road[1];
-                answer.insert(key, target);
-                next_queue.push(key);
-                remove_index.push(i);
+        for &i in &queue {
+            for &j in &roads[i] {
+                if !answer.contains_key(&j) && j != 0 {
+                    next_queue.push(j);
+                    answer.insert(j, i);
+                    if answer.len() == n - 1 {
+                        break 'out;
+                    }
+                }
             }
-            if answer.len() == n - 1 {
-                break 'out;
-            }
-        }
-        if remove_index.len() == 0 {
-            break;
-        }
-        for i in remove_index.iter().rev() {
-            roads.remove(*i);
         }
         queue = next_queue;
     }
@@ -61,7 +52,9 @@ fn main() {
         println!("Yes");
         let mut answer = answer.iter().collect::<Vec<_>>();
         answer.sort_by(|&x, &y| x.0.cmp(y.0));
-        answer.iter().for_each(|(_, value)| println!("{}", value));
+        answer
+            .iter()
+            .for_each(|(_, &value)| println!("{}", value + 1));
     }
 }
 
