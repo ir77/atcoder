@@ -23,10 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a278f17-fb0f-4654-ac1f-924ba424b9e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/abc168_d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/abc168_d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e.dSYM/Contents/Resources/DWARF/abc168_d-e91ecf87cb49a72e" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/abc168_d-e91ecf87cb49a72e.dSYM/Contents/Resources/DWARF/abc168_d-e91ecf87cb49a72e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../abc172/a/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +52,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -95,7 +93,7 @@
       <updated>1593000745914</updated>
       <workItem from="1593002468010" duration="38000" />
       <workItem from="1593002651892" duration="33000" />
-      <workItem from="1593002696237" duration="15877000" />
+      <workItem from="1593002696237" duration="16180000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1593007291172</created>
@@ -164,22 +162,22 @@
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1256" height="502" key="GridCell.Tab.-1.right/0.23.3440.1417@0.23.3440.1417" timestamp="1593005717694" />
-    <state width="2366" height="533" key="GridCell.Tab.0.bottom" timestamp="1593234749069">
+    <state width="2366" height="533" key="GridCell.Tab.0.bottom" timestamp="1593259195029">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="2366" height="533" key="GridCell.Tab.0.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749069" />
-    <state width="2366" height="533" key="GridCell.Tab.0.center" timestamp="1593234749068">
+    <state width="2366" height="533" key="GridCell.Tab.0.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1593259195029" />
+    <state width="2366" height="533" key="GridCell.Tab.0.center" timestamp="1593259195029">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="2366" height="533" key="GridCell.Tab.0.center/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749068" />
-    <state width="2366" height="533" key="GridCell.Tab.0.left" timestamp="1593234749067">
+    <state width="2366" height="533" key="GridCell.Tab.0.center/0.23.3440.1417@0.23.3440.1417" timestamp="1593259195029" />
+    <state width="2366" height="533" key="GridCell.Tab.0.left" timestamp="1593259195028">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="2366" height="533" key="GridCell.Tab.0.left/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749067" />
-    <state width="2366" height="533" key="GridCell.Tab.0.right" timestamp="1593234749069">
+    <state width="2366" height="533" key="GridCell.Tab.0.left/0.23.3440.1417@0.23.3440.1417" timestamp="1593259195028" />
+    <state width="2366" height="533" key="GridCell.Tab.0.right" timestamp="1593259195029">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="2366" height="533" key="GridCell.Tab.0.right/0.23.3440.1417@0.23.3440.1417" timestamp="1593234749069" />
+    <state width="2366" height="533" key="GridCell.Tab.0.right/0.23.3440.1417@0.23.3440.1417" timestamp="1593259195029" />
     <state width="1256" height="502" key="GridCell.Tab.1.bottom" timestamp="1593005707052">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
