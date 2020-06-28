@@ -17,13 +17,16 @@ use std::str::FromStr;
 
 fn main() {
     // setup
-    let n: usize = get_vec_input()[0];
+    let d: usize = get_vec_input()[0];
+    let cs: Vec<i128> = get_vec_input(); // コンテストのタイプiごとに満足度の下がりやすさ
+    let ss: Vec<Vec<i128>> = (0..26).map(|_| get_vec_input()).collect::<Vec<_>>();
 
     // exercise
-    let mut answer = n;
 
     // result
-    println!("{}", answer);
+    for i in 1..=d {
+        println!("{}", i);
+    }
 }
 
 #[allow(dead_code)]
@@ -85,8 +88,8 @@ fn sum_digit(value: i64) -> i64 {
 
 #[allow(dead_code)]
 fn update_max<T>(left: &mut T, right: T)
-    where
-        T: std::cmp::Ord + std::clone::Clone,
+where
+    T: std::cmp::Ord + std::clone::Clone,
 {
     if *left < right {
         *left = right.clone();
@@ -95,8 +98,8 @@ fn update_max<T>(left: &mut T, right: T)
 
 #[allow(dead_code)]
 fn update_min<T>(left: &mut T, right: T)
-    where
-        T: std::cmp::Ord + std::clone::Clone,
+where
+    T: std::cmp::Ord + std::clone::Clone,
 {
     if *left > right {
         *left = right.clone();
@@ -105,9 +108,9 @@ fn update_min<T>(left: &mut T, right: T)
 
 #[allow(dead_code)]
 fn get_vec_input<T>() -> Vec<T>
-    where
-        T: FromStr,
-        T::Err: Debug,
+where
+    T: FromStr,
+    T::Err: Debug,
 {
     let mut input = String::new();
     io::stdin()
@@ -145,8 +148,8 @@ pub trait LexicalPermutation {
 }
 
 impl<T> LexicalPermutation for [T]
-    where
-        T: Ord,
+where
+    T: Ord,
 {
     /// Original author in Rust: Thomas Backman <serenity@exscape.org>
     fn next_permutation(&mut self) -> bool {
