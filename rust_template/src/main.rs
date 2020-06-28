@@ -1,7 +1,6 @@
 #[allow(unused_imports)]
-use std::cmp::max;
 #[allow(unused_imports)]
-use std::cmp::min;
+use std::cmp::{max, min};
 #[allow(unused_imports)]
 use std::collections::HashMap;
 #[allow(unused_imports)]
@@ -85,8 +84,8 @@ fn sum_digit(value: i64) -> i64 {
 
 #[allow(dead_code)]
 fn update_max<T>(left: &mut T, right: T)
-    where
-        T: std::cmp::Ord + std::clone::Clone,
+where
+    T: std::cmp::Ord + std::clone::Clone,
 {
     if *left < right {
         *left = right.clone();
@@ -95,8 +94,8 @@ fn update_max<T>(left: &mut T, right: T)
 
 #[allow(dead_code)]
 fn update_min<T>(left: &mut T, right: T)
-    where
-        T: std::cmp::Ord + std::clone::Clone,
+where
+    T: std::cmp::Ord + std::clone::Clone,
 {
     if *left > right {
         *left = right.clone();
@@ -105,9 +104,9 @@ fn update_min<T>(left: &mut T, right: T)
 
 #[allow(dead_code)]
 fn get_vec_input<T>() -> Vec<T>
-    where
-        T: FromStr,
-        T::Err: Debug,
+where
+    T: FromStr,
+    T::Err: Debug,
 {
     let mut input = String::new();
     io::stdin()
@@ -145,8 +144,8 @@ pub trait LexicalPermutation {
 }
 
 impl<T> LexicalPermutation for [T]
-    where
-        T: Ord,
+where
+    T: Ord,
 {
     /// Original author in Rust: Thomas Backman <serenity@exscape.org>
     fn next_permutation(&mut self) -> bool {
