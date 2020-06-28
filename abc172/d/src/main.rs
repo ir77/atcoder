@@ -16,12 +16,29 @@ use std::io;
 use std::str::FromStr;
 
 fn main() {
+    // setup
     let n: usize = get_vec_input()[0];
+
     let mut answer = 0u128;
-    for i in 1..n + 1 {
-        let value = count_divisor(i) as u128;
-        answer += (i as u128) * value;
+
+    // exercise 1 TLE
+    // for i in 1..=n {
+    //     for j in 1..=i {
+    //         if i % j == 0 {
+    //             answer += i as u128;
+    //         }
+    //     }
+    // }
+
+    // exercise 2
+    for i in 1..=n {
+        let mut value = i;
+        while value <= n {
+            answer += value as u128;
+            value += i;
+        }
     }
+
     println!("{}", answer);
 }
 
@@ -40,21 +57,6 @@ fn get_binary_string(digit: usize) -> Vec<String> {
     (0..2i64.pow(digit as u32))
         .map(|x| format!("{:0>1$b}", x, digit))
         .collect::<Vec<String>>()
-}
-
-#[allow(dead_code)]
-fn count_divisor(value: usize) -> usize {
-    if value == 1 {
-        return 1;
-    }
-    let mut sum = 1;
-    let max = (value as f64).sqrt().floor() as i64 + 1;
-    for i in 1..max {
-        if value % i as usize == 0 {
-            sum += 1;
-        }
-    }
-    sum
 }
 
 #[allow(dead_code)]
