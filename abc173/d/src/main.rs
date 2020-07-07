@@ -18,37 +18,13 @@ fn main() {
     // setup
     let n: usize = get_vec_input()[0];
     let mut friendly: Vec<i128> = get_vec_input();
+    friendly.sort();
+    friendly.reverse();
 
     // exercise
     let mut answer = 0;
-    let mut circle: Vec<i128> = Vec::new();
-    friendly.sort_by(|&a, &b| b.cmp(&a));
-
-    for i in 0..n {
-        answer += friendly[i];
-        circle.push(friendly[i]);
-
-        if n == i + 1 {
-            println!("{}", answer);
-        }
-    }
-
-    'out: loop {
-        let odds = (1..)
-            .filter(|&x| x % 2 != 0)
-            .take(circle.len())
-            .collect::<Vec<_>>();
-        for odd in odds {
-            answer += friendly[odd];
-            if odd < circle.len() {
-            } else {
-                circle.push(friendly[i]);
-            }
-
-            if circle.len() == n {
-                break;
-            }
-        }
+    for i in 1..n {
+        answer += friendly[i / 2];
     }
 
     // result
