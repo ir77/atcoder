@@ -35,8 +35,8 @@ fn main() {
         for i in 0..h {
             for j in 0..w {
                 if table[i][j] == "#".to_string()
-                    && b[i..=i] == '0'.to_string()
-                    && b[h + j..=h + j] == '0'.to_string()
+                    && b[i] == '0'.to_string()
+                    && b[h + j] == '0'.to_string()
                 {
                     count += 1
                 }
@@ -62,10 +62,11 @@ fn get_alphabet() -> Vec<char> {
 }
 
 #[allow(dead_code)]
-fn get_binary_string(digit: usize) -> Vec<String> {
+fn get_binary_string(digit: usize) -> Vec<Vec<String>> {
     (0..2i64.pow(digit as u32))
         .map(|x| format!("{:0>1$b}", x, digit))
-        .collect::<Vec<String>>()
+        .map(|x| x.chars().map(|x| x.to_string()).collect::<Vec<String>>())
+        .collect::<Vec<Vec<_>>>()
 }
 
 #[allow(dead_code)]
