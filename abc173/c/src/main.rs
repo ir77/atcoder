@@ -26,17 +26,26 @@ fn main() {
         .map(|x| x.chars().map(|x| x.to_string()).collect::<Vec<_>>())
         .collect::<Vec<Vec<_>>>();
 
-    let mut black_count = 0;
-    for row in table {
-        for s in row {
-            if s == String::from("#") {
-                black_count += 1;
-            }
-        }
-    }
+    let binary_string = get_binary_string(h + w);
 
     // exercise
-    let mut answer = black_count;
+    let mut answer = 0;
+    for b in binary_string {
+        let mut count = 0;
+        for i in 0..h {
+            for j in 0..w {
+                if table[i][j] == "#".to_string()
+                    && b[i..=i] == '0'.to_string()
+                    && b[h + j..=h + j] == '0'.to_string()
+                {
+                    count += 1
+                }
+            }
+        }
+        if count == k {
+            answer += 1;
+        }
+    }
 
     // result
     println!("{}", answer);
