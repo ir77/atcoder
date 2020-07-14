@@ -20,7 +20,7 @@ fn main() {
     let n: usize = input[0]; // 本の数
     let m = input[1] as i128; // 学びたいアルゴリズムの数
     let x = input[2] as i128; // 目標理解度
-    let books = (0..n).map(get_vec_　input()).collect::<Vec<Vec<i128>>>();
+    let books = (0..n).map(|_| get_vec_input()).collect::<Vec<Vec<i128>>>();
 
     // exercise
 
