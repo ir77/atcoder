@@ -1,5 +1,4 @@
 #[allow(unused_imports)]
-#[allow(unused_imports)]
 use std::cmp::{max, min};
 #[allow(unused_imports)]
 use std::collections::HashMap;
@@ -17,15 +16,41 @@ use std::str::FromStr;
 fn main() {
     // setup
     let input = get_vec_input();
-    let n: usize = input[0]; // 本の数
-    let m = input[1] as i128; // 学びたいアルゴリズムの数
-    let x = input[2] as i128; // 目標理解度
+    let n: usize = input[0];
+    let m: usize = input[1];
+    let x: usize = input[2];
     let books = (0..n).map(|_| get_vec_input()).collect::<Vec<Vec<i128>>>();
+    let patterns = get_binary_string(n);
 
     // exercise
+    let mut answer = i128::max_value();
+    for pattern in patterns {
+        let mut tmp = vec![0; m + 1];
+        for i in 0..n {
+            if pattern[i] == '1'.to_string() {
+                for j in 0..m + 1 {
+                    tmp[j] += books[i][j];
+                }
+            }
+        }
+        let is_ok = tmp
+            .iter()
+            .skip(1)
+            .filter(|&&value| value < x as i128)
+            .collect::<Vec<_>>()
+            .len()
+            == 0;
+        if is_ok && answer > tmp[0] {
+            answer = tmp[0];
+        }
+    }
 
     // result
-    println!();
+    if answer == i128::max_value() {
+        println!("-1");
+    } else {
+        println!("{}", answer);
+    }
 }
 
 #[allow(dead_code)]
@@ -39,10 +64,11 @@ fn get_alphabet() -> Vec<char> {
 }
 
 #[allow(dead_code)]
-fn get_binary_string(digit: usize) -> Vec<String> {
+fn get_binary_string(digit: usize) -> Vec<Vec<String>> {
     (0..2i64.pow(digit as u32))
         .map(|x| format!("{:0>1$b}", x, digit))
-        .collect::<Vec<String>>()
+        .map(|x| x.chars().map(|x| x.to_string()).collect::<Vec<String>>())
+        .collect::<Vec<Vec<_>>>()
 }
 
 #[allow(dead_code)]
