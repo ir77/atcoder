@@ -27,13 +27,13 @@ fn main() {
         let a: usize = input[0];
         let b: usize = input[1];
 
-        if hs[a-1] == hs[b-1] {
-            result[b-1] = 0;
-            result[a-1] = 0;
-        } else if hs[a-1] > hs[b-1] {
-            result[b-1] = 0;
+        if hs[a - 1] == hs[b - 1] {
+            result[b - 1] = 0;
+            result[a - 1] = 0;
+        } else if hs[a - 1] > hs[b - 1] {
+            result[b - 1] = 0;
         } else {
-            result[a-1] = 0;
+            result[a - 1] = 0;
         }
     }
     let answer = result.iter().filter(|&&x| x == 1).collect::<Vec<_>>().len();
