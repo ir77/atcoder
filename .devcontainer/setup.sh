@@ -13,7 +13,6 @@ apt-get install -y \
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
-rustup-init
 
 ## setup and install starship
 ## curl -fsSL https://starship.rs/install.sh | bash
