@@ -15,4 +15,4 @@ apt-get install -y \
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
 
 ## setup and install starship
-curl -fsSL https://starship.rs/install.sh | bash
+## curl -fsSL https://starship.rs/install.sh | bash
