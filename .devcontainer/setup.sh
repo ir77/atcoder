@@ -13,6 +13,8 @@ apt-get install -y \
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
+rustup component add rustfmt
+rustup component add clippy 
 
 ## setup and install starship
-## curl -fsSL https://starship.rs/install.sh | bash
+curl -fsSL https://starship.rs/install.sh | bash
