@@ -23,4 +23,4 @@ cargo install cargo-expand
 cargo install cargo-edit
 
 ## setup and install starship
-curl -fsSL https://starship.rs/install.sh | bash
+## curl -fsSL https://starship.rs/install.sh | bash
