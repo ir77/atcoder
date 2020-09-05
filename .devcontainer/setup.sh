@@ -11,10 +11,8 @@ apt-get install -y \
   build-essential \
   openssl
 
-## Install rustup and common components
+## install rustup
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
-rustup component add rustfmt
-rustup component add clippy 
 
 ## setup and install starship
 curl -fsSL https://starship.rs/install.sh | bash
