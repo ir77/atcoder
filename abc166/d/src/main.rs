@@ -15,13 +15,17 @@ use std::str::FromStr;
 
 fn main() {
     // setup
-    let n: usize = get_vec_input()[0];
+    let x: i128 = get_vec_input()[0];
 
     // exercise
-    let mut answer = n;
-
-    // result
-    println!("{}", answer);
+    for i in -1000..1000i128 {
+        for j in -1000..1000i128 {
+            if j.pow(5) - i.pow(5) == x {
+                println!("{} {}", j, i);
+                return;
+            }
+        }
+    }
 }
 
 #[allow(dead_code)]
