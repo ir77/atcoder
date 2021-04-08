@@ -15,11 +15,12 @@ use std::str::FromStr;
 
 fn main() {
     // setup
-    let n: usize = get_vec_input()[0];
+    let input: Vec<i128> = get_vec_input();
+    let x = input[0];
+    let y = input[1];
 
     // exercise
-    let mut answer = n;
-
+    let mut answer = y / x;
     // result
     println!("{}", answer);
 }
