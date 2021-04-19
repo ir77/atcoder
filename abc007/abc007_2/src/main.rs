@@ -15,11 +15,15 @@ use std::str::FromStr;
 
 fn main() {
     // setup
-    let n: usize = get_vec_input()[0];
+    let a = get_string_input();
 
     // exercise
-    let mut answer = n;
-    println!("{}", answer);
+    // result
+    if a == "a" {
+        println!("{}", -1);
+    } else {
+        println!("{}", "a");
+    }
 }
 
 #[allow(dead_code)]

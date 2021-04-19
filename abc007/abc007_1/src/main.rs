@@ -18,7 +18,9 @@ fn main() {
     let n: usize = get_vec_input()[0];
 
     // exercise
-    let mut answer = n;
+    let mut answer = n - 1;
+
+    // result
     println!("{}", answer);
 }
 
