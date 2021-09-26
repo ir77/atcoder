@@ -1,3 +1,4 @@
+use proconio::input;
 #[allow(unused_imports)]
 use std::cmp::{max, min};
 #[allow(unused_imports)]
@@ -15,7 +16,9 @@ use std::str::FromStr;
 
 fn main() {
     // setup
-    let n: usize = get_vec_input()[0];
+    input! {
+        n: usize
+    }
 
     // exercise
     let mut answer = n;
@@ -98,40 +101,6 @@ where
     if *left > right {
         *left = right.clone();
     }
-}
-
-#[allow(dead_code)]
-fn get_vec_input<T>() -> Vec<T>
-where
-    T: FromStr,
-    T::Err: Debug,
-{
-    let mut input = String::new();
-    io::stdin()
-        .read_line(&mut input)
-        .expect("Failed to read line");
-    let vec: Vec<T> = input
-        .split_whitespace()
-        .map(|x| x.parse().unwrap())
-        .collect();
-    vec
-}
-
-#[allow(dead_code)]
-fn get_tuple_input() -> (u64, f32) {
-    let mut s = String::new();
-    io::stdin().read_line(&mut s).expect("");
-    let mut iter = s.trim().split_whitespace();
-    let c: u64 = iter.next().unwrap().parse().unwrap();
-    let n: f32 = iter.next().unwrap().parse().unwrap();
-    (c, n)
-}
-
-#[allow(dead_code)]
-fn get_string_input() -> String {
-    let mut s = String::new();
-    io::stdin().read_line(&mut s).expect("");
-    s.trim().to_string()
 }
 
 /// https://github.com/bluss/permutohedron/blob/master/src/lexical.rs
