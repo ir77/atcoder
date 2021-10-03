@@ -17,19 +17,12 @@ use std::str::FromStr;
 fn main() {
     // setup
     input! {
-        a: i128,
-        b: i128
+        n: usize
     }
 
-    if a % b == 0 {
-        println!("{}", 0);
-        return;
-    }
-    if a < b {
-        println!("{}", b - a);
-        return;
-    }
-    println!("{}", b - (a % b));
+    // exercise
+    let mut answer = n;
+    println!("{}", answer);
 }
 
 #[allow(dead_code)]
