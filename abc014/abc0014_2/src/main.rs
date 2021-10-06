@@ -21,14 +21,12 @@ fn main() {
         a_list: [i128; n]
     }
 
-    let binary_chars = &format!("{:b}", x).chars().rev().collect::<Vec<char>>();
-    let mut answer: i128 = 0;
-
-    for index in 0..binary_chars.len() {
-        if binary_chars[index] == '1' {
-            answer += a_list[index]
-        }
-    }
+    let answer: i128 = format!("{:b}", x)
+        .chars()
+        .rev()
+        .enumerate()
+        .map(|(i, c)| return if c == '1' { a_list[i] } else { 0 })
+        .sum();
     println!("{}", answer);
 }
 
