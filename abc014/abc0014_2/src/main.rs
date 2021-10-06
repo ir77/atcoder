@@ -15,13 +15,20 @@ use std::io;
 use std::str::FromStr;
 
 fn main() {
-    // setup
     input! {
-        n: usize
+        n: usize,
+        x: i128,
+        a_list: [i128; n]
     }
 
-    // exercise
-    let mut answer = n;
+    let binary_chars = &format!("{:b}", x).chars().rev().collect::<Vec<char>>();
+    let mut answer: i128 = 0;
+
+    for index in 0..binary_chars.len() {
+        if binary_chars[index] == '1' {
+            answer += a_list[index]
+        }
+    }
     println!("{}", answer);
 }
 
