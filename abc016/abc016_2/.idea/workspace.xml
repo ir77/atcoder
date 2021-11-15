@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad851ce-c5e1-40c0-9f37-c93fb2d36b61" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../rust_template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rust_template/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abc016_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../abc016_1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +14,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="3nrg6i29" />
@@ -30,7 +38,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" nameIsGenerated="true">
@@ -62,8 +69,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636727689069</updated>
-      <workItem from="1636727691368" duration="39000" />
-      <workItem from="1636727844506" duration="256000" />
+      <workItem from="1636727691368" duration="150000" />
+      <workItem from="1636728102284" duration="2536000" />
     </task>
     <servers />
   </component>
