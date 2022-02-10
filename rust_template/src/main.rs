@@ -1,5 +1,7 @@
 use proconio::input;
 #[allow(unused_imports)]
+use proconio::marker::Chars;
+#[allow(unused_imports)]
 use std::cmp::{max, min};
 #[allow(unused_imports)]
 use std::collections::HashMap;
