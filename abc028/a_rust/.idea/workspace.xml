@@ -4,7 +4,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad851ce-c5e1-40c0-9f37-c93fb2d36b61" name="Changes" comment="" />
+    <list default="true" id="4ad851ce-c5e1-40c0-9f37-c93fb2d36b61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../abc027/b_rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../abc027/b_rust/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,11 +14,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="JsbtTreeLayoutManager">
-    <layout place="tools.popupGrunt">
-      <scroll-view-position x="0" y="0" />
-    </layout>
   </component>
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
@@ -68,8 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636727689069</updated>
       <workItem from="1636727691368" duration="150000" />
-      <workItem from="1646393463911" duration="1048000" />
-      <workItem from="1646394525278" duration="2408000" />
+      <workItem from="1646490540313" duration="87000" />
     </task>
     <servers />
   </component>
