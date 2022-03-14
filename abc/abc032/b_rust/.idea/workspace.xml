@@ -11,7 +11,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="KotlinMultiplatform">
+    <allAvailableExecutables />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="3nrg6i29" />
@@ -39,7 +42,9 @@
       <option name="emulateTerminal" value="false" />
       <option name="withSudo" value="false" />
       <option name="backtrace" value="SHORT" />
-      <envs />
+      <envs>
+        <env name="RUST_BACKTRACE" value="full" />
+      </envs>
       <option name="isRedirectInput" value="false" />
       <option name="redirectInputPath" value="" />
       <method v="2">
@@ -49,6 +54,7 @@
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636727689069</updated>
       <workItem from="1636727691368" duration="150000" />
+      <workItem from="1647001482765" duration="2561000" />
     </task>
     <servers />
   </component>
