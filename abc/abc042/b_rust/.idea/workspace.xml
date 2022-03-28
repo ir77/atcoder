@@ -4,7 +4,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad851ce-c5e1-40c0-9f37-c93fb2d36b61" name="Changes" comment="" />
+    <list default="true" id="4ad851ce-c5e1-40c0-9f37-c93fb2d36b61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../abc041/b_rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../abc041/b_rust/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,22 +65,11 @@
       <option name="presentableId" value="Default" />
       <updated>1636727689069</updated>
       <workItem from="1636727691368" duration="150000" />
-      <workItem from="1648387974204" duration="2368000" />
+      <workItem from="1648475936495" duration="881000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/main.rs</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
