@@ -19,18 +19,18 @@ use std::str::FromStr;
 fn main() {
     // setup
     input! {
-        n: usize
+        w: i64,
+        a: i64,
+        b: i64
     }
 
     // exercise
-    let div = 10_u64.pow(9) + 7;
-    println!(
-        "{}",
-        (1..n +d 1)
-            .map(|x| x as u64)
-            .fold(1, |x, y| x * y % div)
-
-    );
+    let diff = (b - a).abs();
+    if diff < w {
+        println!("{}", 0);
+    } else {
+        println!("{}", diff - w);
+    }
 }
 
 #[allow(dead_code)]

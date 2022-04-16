@@ -19,18 +19,16 @@ use std::str::FromStr;
 fn main() {
     // setup
     input! {
-        n: usize
+        a: char,
+        b: char
     }
 
     // exercise
-    let div = 10_u64.pow(9) + 7;
-    println!(
-        "{}",
-        (1..n +d 1)
-            .map(|x| x as u64)
-            .fold(1, |x, y| x * y % div)
-
-    );
+    if a == 'H' && b == 'H' || a == 'D' && b == 'D' {
+        println!("H");
+    } else {
+        println!("D");
+    }
 }
 
 #[allow(dead_code)]
