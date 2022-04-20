@@ -4,7 +4,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad851ce-c5e1-40c0-9f37-c93fb2d36b61" name="Changes" comment="" />
+    <list default="true" id="4ad851ce-c5e1-40c0-9f37-c93fb2d36b61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../abc059/rust_b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../abc059/rust_b/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636727689069</updated>
       <workItem from="1636727691368" duration="150000" />
-      <workItem from="1650368760696" duration="2413000" />
+      <workItem from="1650461282053" duration="189000" />
     </task>
     <servers />
   </component>
