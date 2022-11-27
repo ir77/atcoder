@@ -21,73 +21,65 @@ fn main() {
     input! {
         h: usize,
         w: usize,
-        sh: [Chars; h]
+        mut sh: [Chars; h]
     }
 
-    let mut sh2: Vec<Vec<i64>> = sh
-        .iter()
-        .map(|chars| {
-            chars
-                .iter()
-                .map(|&c| {
-                    if c == '.' {
-                        return 0;
-                    } else {
-                        return -1;
-                    }
-                })
-                .collect::<Vec<i64>>()
-        }).collect::<Vec<Vec<i64>>>();
     for i in 0..h {
         for j in 0..w {
-            if sh2[i][j] != -1 {
+            if sh[i][j] != '#' {
+                if sh[i][j] == '.' {
+                    sh[i][j] = '0';
+                }
                 continue;
             }
             // 上
             if i > 0 {
-                if j > 0 && sh2[i - 1][j - 1] != -1 { // 左
-                    sh2[i - 1][j - 1] += 1;
+                if j > 0 && sh[i - 1][j - 1] != '#' { // 左
+                    sh[i - 1][j - 1] = add1_char(sh[i - 1][j - 1]);
                 }
-                if sh2[i - 1][j] != -1 {
-                    sh2[i - 1][j] += 1;
+                if sh[i - 1][j] != '#' {
+                    sh[i - 1][j] = add1_char(sh[i - 1][j]);
                 }
-                if j < w - 1 && sh2[i - 1][j + 1] != -1 { // 右
-                    sh2[i - 1][j + 1] += 1;
+                if j < w - 1 && sh[i - 1][j + 1] != '#' { // 右
+                    sh[i - 1][j + 1] = add1_char(sh[i - 1][j + 1]);
                 }
             }
             // 真左
-            if j > 0 && sh2[i][j - 1] != -1 {
-                sh2[i][j - 1] += 1;
+            if j > 0 && sh[i][j - 1] != '#' {
+                sh[i][j - 1] = add1_char(sh[i][j - 1]);
             }
             // 真右
-            if j < w - 1 && sh2[i][j + 1] != -1 {
-                sh2[i][j + 1] += 1;
+            if j < w - 1 && sh[i][j + 1] != '#' {
+                sh[i][j + 1] = add1_char(sh[i][j + 1]);
             }
             // 下
             if i < h - 1 {
-                if j > 0 && sh2[i + 1][j - 1] != -1 { // 左
-                    sh2[i + 1][j - 1] += 1;
+                if j > 0 && sh[i + 1][j - 1] != '#' { // 左
+                    sh[i + 1][j - 1] = add1_char(sh[i + 1][j - 1]);
                 }
-                if sh2[i + 1][j] != -1 {
-                    sh2[i + 1][j] += 1;
+                if sh[i + 1][j] != '#' {
+                    sh[i + 1][j] = add1_char(sh[i + 1][j]);
                 }
-                if j < w - 1 && sh2[i + 1][j + 1] != -1 { // 右
-                    sh2[i + 1][j + 1] += 1;
+                if j < w - 1 && sh[i + 1][j + 1] != '#' { // 右
+                    sh[i + 1][j + 1] = add1_char(sh[i + 1][j + 1]);
                 }
             }
         }
     }
-    sh2.iter().map(|x| {
-        x.iter().map(|&y| {
-            if y == -1 {
-                return '#';
-            } else {
-                return std::char::from_digit(y as u32, 10).unwrap();
-            }
-        }).collect::<String>()
-    }).for_each(|z| {
-        println!("{}", z);
-    })
+    sh.iter()
+        .map(|x| {
+            x.iter().collect::<String>()
+        })
+        .for_each(|z| {
+            println!("{}", z as String);
+        })
+}
+
+fn add1_char(c: char) -> char {
+    if c == '.' {
+        return '1';
+    }
+    return std::char::from_u32(c as u32 + 1).unwrap()
 }
 
 #[allow(dead_code)]
