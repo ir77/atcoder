@@ -13,18 +13,66 @@ use std::fmt;
 use std::fmt::Debug;
 #[allow(unused_imports)]
 use std::io;
+use std::ops::Index;
 #[allow(unused_imports)]
 use std::str::FromStr;
 
 fn main() {
     // setup
     input! {
-        n: usize
+        s: Chars,
+        t: Chars
     }
 
-    // exercise
-    let mut answer = n;
-    println!("{}", answer);
+    // let mut search_index = s.len() / 2;
+    // let mut minimum_index: usize = 0;
+    // let mut max_index: usize = s.len() - 1;
+    // // println!("{} {} {}", search_index, minimum_index, max_index);
+    // for _ in 0..s.len() {
+    //     if s[search_index] != t[search_index] {
+    //         if minimum_index == search_index {
+    //             println!("{}", minimum_index + 1);
+    //             break;
+    //         }
+    //         // これかこれよりも下に答えがある
+    //         max_index = search_index;
+    //         search_index = (search_index + minimum_index) / 2;
+    //     } else {
+    //         if minimum_index == search_index {
+    //             if s[max_index] != t[max_index] {
+    //                 println!("{}", max_index + 1);
+    //             } else {
+    //                 println!("{}", max_index + 2);
+    //             }
+    //             break;
+    //         }
+    //         // 上に答えがある
+    //         minimum_index = search_index;
+    //         search_index = (search_index + max_index) / 2;
+    //     }
+    //     // println!("{} {} {}", search_index, minimum_index, max_index);
+    // }
+    // let alphabet = get_alphabet();
+    // for c in alphabet {
+    //     let s2: Vec<_> = s.iter().enumerate().filter(|(i, &x)| x == c).collect();
+    //     let t2: Vec<_> = t.iter().enumerate().filter(|(i, &x)| x == c).collect();
+    //     if s2.len() != t2.len() {
+    //         for t in t2 {
+    //             if !s2.contains(&t) {
+    //                 println!("{}", t.0 + 1);
+    //                 return;
+    //             }
+    //         }
+    //     }
+    // }
+    // 最初にこれに近いものを書いたがTLEになって上の沼にハマってしまった…
+    for i in 0..s.len() {
+        if s[i] != t[i] {
+            println!("{}", i + 1);
+            return;
+        }
+    }
+    println!("{}", s.len() + 1);
 }
 
 #[allow(dead_code)]

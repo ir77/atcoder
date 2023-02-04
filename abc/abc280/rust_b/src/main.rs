@@ -19,12 +19,23 @@ use std::str::FromStr;
 fn main() {
     // setup
     input! {
-        n: usize
+        n: usize,
+        sn: [i64; n]
     }
 
     // exercise
-    let mut answer = n;
-    println!("{}", answer);
+    for i in 0..n {
+        if i == 0 {
+            print!("{}", sn[i]);
+        } else {
+            print!("{}", sn[i] - sn[i - 1]);
+        }
+        if i == n - 1 {
+            print!(" \n");
+        } else {
+            print!(" ");
+        }
+    }
 }
 
 #[allow(dead_code)]

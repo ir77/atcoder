@@ -19,12 +19,24 @@ use std::str::FromStr;
 fn main() {
     // setup
     input! {
-        n: usize
+        k: i64
     }
 
     // exercise
-    let mut answer = n;
-    println!("{}", answer);
+    if check_prime(k) {
+        println!("{}", k);
+        return;
+    }
+    let mut answer = k;
+    for i in 2..answer {
+        if answer % i == 0 {
+            answer = answer / i;
+            if answer == 1 {
+                println!("{}", i);
+                return;
+            }
+        }
+    }
 }
 
 #[allow(dead_code)]

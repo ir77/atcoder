@@ -19,11 +19,14 @@ use std::str::FromStr;
 fn main() {
     // setup
     input! {
-        n: usize
+        h: usize,
+        w: usize,
+        sh: [Chars; h]
     }
 
-    // exercise
-    let mut answer = n;
+    let answer = sh.iter().map(|chars| {
+        chars.iter().filter(|&x| x == &'#').collect::<String>()
+    }).fold(0, |x, y: String| x + y.len());
     println!("{}", answer);
 }
 
