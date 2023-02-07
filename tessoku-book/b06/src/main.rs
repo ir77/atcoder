@@ -20,19 +20,26 @@ fn main() {
     // setup
     input! {
         n: usize,
+        mut a_list: [usize; n],
         q: usize,
-        mut aarray: [i64; n],
-        lrarray: [(usize, usize); q]
+        lr_list: [(usize, usize); q]
     }
 
     // exercise
-    for i in 1..n {
-        aarray[i] = aarray[i] + aarray[i - 1]
+    a_list.insert(0, 0);
+    for i in 1..n + 1 {
+        a_list[i] = a_list[i] + a_list[i - 1];
+        //println!("{} : {}", i, a_list[i]);
     }
-    for (l, r) in lrarray {
-        let r = aarray[r - 1];
-        let l = if l == 1 { 0 } else { aarray[l - 1 -1] };
-        println!("{}", r - l);
+    for (l, r) in lr_list {
+        if (r - (l - 1)) < (a_list[r] - a_list[l - 1]) * 2 {
+            println!("win");
+        } else if (r - (l - 1)) == (a_list[r] - a_list[l - 1]) * 2 {
+            println!("draw");
+        } else {
+            println!("lose");
+        }
+
     }
 }
 
