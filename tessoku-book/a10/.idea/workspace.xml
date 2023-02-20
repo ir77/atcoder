@@ -65,7 +65,7 @@
       <updated>1636727689069</updated>
       <workItem from="1636727691368" duration="150000" />
       <workItem from="1669553472587" duration="433000" />
-      <workItem from="1676812083817" duration="2457000" />
+      <workItem from="1676812083817" duration="2884000" />
     </task>
     <servers />
   </component>
@@ -77,8 +77,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/main.rs</url>
-          <line>52</line>
-          <option name="timeStamp" value="1" />
+          <line>53</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
