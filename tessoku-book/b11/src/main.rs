@@ -21,12 +21,44 @@ use superslice::Ext;
 fn main() {
     // setup
     input! {
-        n: usize
+        n: usize,
+        mut a_n: [i64; n],
+        q: usize,
+        x_q: [i64; q]
     }
 
     // exercise
-    let mut answer = n;
-    println!("{}", answer);
+    // 単純に解くとTLE
+    // for x in x_q {
+    //     println!("{}", a_n.iter().filter(|&&a| a < x).count());
+    // }
+
+    // 二分探索で解く、、がTLE、、
+    // a_n.sort();
+    // for x in x_q {
+    //     let mut max_index = n - 1;
+    //     let mut min_index = n - n;
+    //     loop {
+    //         let target_index = (max_index + min_index) / 2;
+    //         if min_index == max_index {
+    //             if a_n[target_index] <= x {
+    //                 min_index += 1;
+    //             }
+    //             println!("{}", min_index);
+    //             break;
+    //         } else if a_n[target_index] < x {
+    //             min_index = target_index + 1;
+    //         } else {
+    //             max_index = target_index - 1;
+    //         }
+    //     }
+    // }
+
+    // 用意された二分探索用の関数を利用
+    a_n.sort();
+    for x in x_q {
+        println!("{}", a_n.lower_bound(&x));
+    }
 }
 
 #[allow(dead_code)]
