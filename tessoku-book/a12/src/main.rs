@@ -28,23 +28,22 @@ fn main() {
 
     // exercise
     // 答えで二分探索
-    let mut left: i64 = 0;
+    let mut left: i64 = 1;
     let mut right: i64 = 1_000_000_000;
-    loop {
-        if right - left <= 1 {
-            break;
-        }
+    while left < right {
         let mid = (left + right) / 2;
         let mut count = 0;
         for a in a_n.iter() {
-            count += (a - 1) / mid;
+            count += mid / a;
         }
-        if count <= k {
+        if count >= k {
             right = mid;
         } else {
-            left = mid;
+            left = mid + 1; //
         }
     }
+
+    println!("{}", right);
 }
 
 #[allow(dead_code)]
